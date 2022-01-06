@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: auto;
+  /* background: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerContainer {
+  max-width: 84rem;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  text-align: left;
+  gap: 1rem;
+}
+
+.innerContainer .milo {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.innerContainer .navi {
+  display: flex;
+  flex-direction: column;
+}
+.innerContainer .connect {
+  display: flex;
+  flex-direction: column;
+}
+.innerContainer .policy {
+  display: flex;
+  flex-direction: column;
+}
