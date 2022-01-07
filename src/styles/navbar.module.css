@@ -1,13 +1,12 @@
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: auto;
-  /* background: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 99;
 }
 .innerContainer {
   position: relative;
@@ -17,7 +16,13 @@
   flex: 1 1;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1em;
+  transition: all ease 500ms;
+}
+.containerOnScroll {
+  padding: 0 1em;
+  background: white;
+  transition: all ease 500ms;
 }
 .logo {
 }

@@ -3,6 +3,9 @@
   position: relative;
 }
 
+.fluid-container {
+  padding: 0 clamp(1rem, 1rem + 10vw, 4rem);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

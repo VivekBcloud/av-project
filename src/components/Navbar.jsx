@@ -2,12 +2,20 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/navbar.module.css";
+import { useInView } from "react-intersection-observer";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
+  const [show, setShow] = useState(false);
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
+  };
+  const navbarControl = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
   };
   const parent = {
     animate: {
@@ -38,14 +46,20 @@ const Navbar = () => {
 
     window.addEventListener("resize", changeWidth);
 
+    window.addEventListener("scroll", navbarControl);
     return () => {
+      window.removeEventListener("scroll", navbarControl);
       window.removeEventListener("resize", changeWidth);
     };
   }, []);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.innerContainer}>
+    <div className={`${styles.container} fluid-container `}>
+      <div
+        className={`${styles.innerContainer} ${
+          show && styles.containerOnScroll
+        }`}
+      >
         <div className={styles.logo}>
           <img src="/images/logoML.png" alt="logo" />
         </div>

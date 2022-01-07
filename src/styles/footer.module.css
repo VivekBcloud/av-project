@@ -34,3 +34,8 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1000px) {
+  .innerContainer {
+    grid-template-columns: 1fr;
+  }
+}
