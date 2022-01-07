@@ -7,17 +7,17 @@
   justify-content: center;
   align-items: center;
   z-index: 99;
+  transition: all ease 500ms;
+  padding: 1em;
 }
 .innerContainer {
   position: relative;
   max-width: 84rem;
-  /* background: yellow; */
   display: flex;
   flex: 1 1;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
-  transition: all ease 500ms;
+  padding: unset;
 }
 .containerOnScroll {
   padding: 0 1em;
@@ -51,7 +51,12 @@
 .items:hover {
   color: aquamarine;
 }
-
+.anchor {
+  color: #000;
+}
+.anchor:hover {
+  color: #0d6efd;
+}
 .btnContainer {
   position: relative;
   display: none;
@@ -71,7 +76,7 @@
   display: block;
   width: 2.5rem;
   height: 5px;
-  background: #fff;
+  background: #000;
   transform-origin: right;
 }
 

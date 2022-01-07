@@ -54,12 +54,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`${styles.container} fluid-container `}>
-      <div
-        className={`${styles.innerContainer} ${
-          show && styles.containerOnScroll
-        }`}
-      >
+    <div
+      className={`${styles.container}  ${
+        show && styles.containerOnScroll
+      } fluid-container`}
+    >
+      <div className={`${styles.innerContainer} `}>
         <div className={styles.logo}>
           <img src="/images/logoML.png" alt="logo" />
         </div>
@@ -67,16 +67,24 @@ const Navbar = () => {
           {(toggleMenu || screenWidth > 1000) && (
             <ul className={styles.list}>
               <li className={styles.items}>
-                <Link to="/">Home</Link>
+                <Link className={styles.anchor} to="/">
+                  Home
+                </Link>
               </li>
               <li className={styles.items}>
-                <Link to="about">About Us</Link>
+                <Link className={styles.anchor} to="about">
+                  About Us
+                </Link>
               </li>
               <li className={styles.items}>
-                <Link to="agency">Agency Request</Link>
+                <Link className={styles.anchor} to="agency">
+                  Agency Request
+                </Link>
               </li>
               <li className={styles.items}>
-                <Link to="contact">Contact Us</Link>
+                <Link className={styles.anchor} to="contact">
+                  Contact Us
+                </Link>
               </li>
             </ul>
           )}

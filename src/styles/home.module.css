@@ -39,6 +39,8 @@
   place-items: center;
   text-align: left;
 }
+.leftContainer > div {
+}
 .rightContainer {
   display: grid;
   place-content: center;
@@ -64,5 +66,14 @@
 @media screen and (max-width: 1000px) {
   .container .innerContainer {
     grid-template-columns: 1fr;
+  }
+  .leftContainer {
+    text-align: center;
+  }
+  .leftContainer > div {
+    margin-top: 10rem;
+  }
+  .rightContainer .banner2 {
+    top: 0;
   }
 }
