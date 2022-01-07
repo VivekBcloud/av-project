@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/footer.module.css";
 const Footer = () => {
   return (
@@ -27,8 +27,12 @@ const Footer = () => {
         </div>
         <div className={styles.policy}>
           <h2 className={styles.footerTitles}>Policy</h2>
-          <div>Terms & Conditions</div>
-          <div>Privacy Policy</div>
+          <Link to="terms">
+            <div>Terms & Conditions</div>
+          </Link>
+          <Link to="policy">
+            <div>Privacy Policy</div>
+          </Link>
         </div>
       </div>
       <Outlet />

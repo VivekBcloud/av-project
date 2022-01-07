@@ -1,15 +1,18 @@
 .container {
+  position: absolute;
+  top: 0;
   width: 100%;
   height: auto;
   /* background: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .innerContainer {
   position: relative;
   max-width: 84rem;
-  background: yellow;
+  /* background: yellow; */
   display: flex;
   flex: 1 1;
   justify-content: space-between;

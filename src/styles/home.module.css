@@ -1,0 +1,49 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  min-height: 880px;
+  background: linear-gradient(to right, rgba(39, 70, 133, 0.8) 0%, #0dcaf0 100%),
+    url("../../public/hero-bg.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(39, 70, 133, 0.8) 0%,
+      rgb(13, 202, 240) 100%
+    ),
+    url("../../public/hero-bg.jpg");
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.container .innerContainer {
+  max-width: 84rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.waveImg {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  bottom: 120vh;
+  width: 100vw;
+}
+.leftContainer {
+  font-size: 4rem;
+  color: white;
+  display: grid;
+  place-items: center;
+  text-align: left;
+}
+.rightContainer > img {
+  width: 250px;
+}
+.rightContainer .banner1 {
+  border: 10px solid white;
+  box-shadow: 0 15px 50px 0 rgb(0 0 0 / 30%);
+  border-radius: 30px;
+}
+.rightContainer .banner2 {
+  border: 10px solid yellowgreen;
+  box-shadow: 0 15px 50px 0 rgb(0 0 0 / 30%);
+  border-radius: 30px;
+}
