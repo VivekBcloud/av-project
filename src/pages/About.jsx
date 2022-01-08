@@ -23,7 +23,7 @@ const About = () => {
             <img src="/svg/undraw_svg_2.svg" alt="about-img" />
           </div>
         </div>
-        <div className={styles.aboutSection}>
+        <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
           <div className={styles.leftSection}>
             <img src="/svg/undraw_svg_3.svg" alt="live-img" />
           </div>
@@ -49,7 +49,7 @@ const About = () => {
             <img src="/images/mission.jpg" alt="mission-img" />
           </div>
         </div>
-        <div className={styles.aboutSection}>
+        <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
           <div className={styles.leftSection}>
             <img src="/svg/undraw_svg_4.svg" alt="why-img" />
           </div>
