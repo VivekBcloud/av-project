@@ -1,0 +1,22 @@
+.innerContainer {
+  max-width: 84rem;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  font-family: "Roboto", sans-serif;
+  color: #9fa1a4;
+  line-height: 1.5;
+}
+.innerContainer > div {
+  text-align: left;
+  padding: 40px;
+  white-space: pre-line;
+}
+.innerContainer > div > h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  margin-block: 1rem 0.5rem;
+}
