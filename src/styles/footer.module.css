@@ -33,11 +33,15 @@
   display: flex;
   gap: 1rem;
 }
-.socialLogos > img {
-  border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  background: white;
+.socialLogos > a > svg {
+  margin-top: 1rem;
+  width: 30px;
+  height: 30px;
+  fill: white;
+  cursor: pointer;
+}
+.socialLogos > a > svg:hover {
+  fill: #000;
 }
 .innerContainer .navi {
   display: flex;
@@ -68,9 +72,5 @@
 @media screen and (max-width: 1000px) {
   .container .innerContainer {
     grid-template-columns: 1fr;
-  }
-  .container .copyright {
-    /* padding-left: clamp(1rem, 1rem + 10vw, 4rem) !important;
-    padding-right: clamp(1rem, 1rem + 10vw, 4rem) !important; */
   }
 }

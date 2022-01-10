@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/footer.module.css";
+import { FacebookSvg, InstaSvg, LinkedinSvg } from "../data/useSvg";
 const Footer = () => {
   const ScrollToTop = () => {
     window.scroll(0, 0);
@@ -15,9 +16,27 @@ const Footer = () => {
             talent on this platform.
           </div>
           <div className={styles.socialLogos}>
-            <img src="/svg/icons8-facebook.svg" alt="fb" />
-            <img src="/svg/icons8-instagram.svg" alt="insta" />
-            <img src="/svg/icons8-linkedin.svg" alt="linkedin" />
+            <a
+              href="https://www.facebook.com/miloliveofficialpage/?referrer=whatsapp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookSvg />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstaSvg />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/milo-live/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedinSvg />
+            </a>
           </div>
         </div>
         <div className={styles.navi}>

@@ -55,9 +55,9 @@
 .container .innerContainer .aboutSection46 {
   grid-template-columns: 4fr 6fr;
 }
-.container .innerContainer .aboutSection .leftSection {
-  /* max-width: 50ch; */
-}
+/* .container .innerContainer .aboutSection .leftSection {
+  max-width: 50ch;
+} */
 .container .innerContainer .aboutSection .title {
   color: #2068a0;
   font-weight: 600;

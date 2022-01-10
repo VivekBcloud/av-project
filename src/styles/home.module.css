@@ -25,7 +25,7 @@
 }
 .waveImg {
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 0;
   bottom: 120vh;
   width: 100vw;
@@ -38,8 +38,6 @@
   display: grid;
   place-items: center;
   text-align: left;
-}
-.leftContainer > div {
 }
 .rightContainer {
   display: grid;
