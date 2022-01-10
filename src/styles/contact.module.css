@@ -104,6 +104,24 @@
   font-size: 1rem;
   border-radius: 0.25rem;
 }
+.infoContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 4rem;
+}
+.infoContainer > div {
+  font-family: "Roboto", sans-serif;
+  color: #9fa1a4;
+  line-height: 1.5;
+}
+.infoContainer .infoHeading {
+  color: #212529;
+  font-weight: bolder;
+  margin-bottom: 0.25rem;
+}
+.infoContainer .info {
+  color: #2d71a1;
+}
 
 @media screen and (max-width: 1000px) {
   .contentWrapper {
@@ -120,5 +138,9 @@
   .submitBtn {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+  .infoContainer {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }

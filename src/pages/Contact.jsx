@@ -58,6 +58,25 @@ const Contact = () => {
             <img src="/images/contact.jpg" alt="contanct-img" />
           </div>
         </div>
+        <div className={styles.infoContainer}>
+          <div>
+            <div className={styles.infoHeading}>Founder</div>
+            <div className={styles.info}>Harshit Gupta (Co-founder)</div>
+            <div className={styles.info}>Ashu Mehra (Co-founder)</div>
+          </div>
+          <div>
+            <div className={styles.infoHeading}>Email</div>
+            <div>Your queries will get resolved in 24 hours.</div>
+            <div>
+              Write to us :
+              <span className={styles.info}> support@milolives.com</span>
+            </div>
+          </div>
+          <div>
+            <div className={styles.infoHeading}>Address</div>
+            <div>New Delhi, India</div>
+          </div>
+        </div>
       </div>
     </div>
   );

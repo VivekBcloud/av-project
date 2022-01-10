@@ -9,7 +9,7 @@ const About = () => {
         <img src="/svg/wave.svg" alt="wave" className={styles.waveImg} />
       </div>
       <div className={`${styles.innerContainer}`}>
-        <div className={styles.aboutSection}>
+        <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
           <div className={styles.leftSection}>
             <div className={styles.title}>ABOUT US</div>
             <div className={styles.desc}>
@@ -19,12 +19,12 @@ const About = () => {
               earn money by showcasing your talent at anytime & anywhere.
             </div>
           </div>
-          <div className={styles.rightSection}>
+          <div className={`${styles.rightSection} fluid-container`}>
             <img src="/svg/undraw_svg_2.svg" alt="about-img" />
           </div>
         </div>
         <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
-          <div className={styles.leftSection}>
+          <div className={`${styles.leftSection} fluid-container`}>
             <img src="/svg/undraw_svg_3.svg" alt="live-img" />
           </div>
           <div className={styles.rightSection}>
@@ -45,15 +45,15 @@ const About = () => {
               their talent.
             </div>
           </div>
-          <div className={styles.rightSection}>
+          <div className={`${styles.rightSection} fluid-container`}>
             <img src="/images/mission.jpg" alt="mission-img" />
           </div>
         </div>
         <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
-          <div className={styles.leftSection}>
+          <div className={`${styles.leftSection} fluid-container`}>
             <img src="/svg/undraw_svg_4.svg" alt="why-img" />
           </div>
-          <div className={styles.rightSection}>
+          <div className={`${styles.rightSection} fluid-container`}>
             <div className={styles.title}>Why Us</div>
             <div className={styles.desc}>
               During the Covid-19 pandemic, various apps were banned by Indian

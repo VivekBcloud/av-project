@@ -79,7 +79,14 @@
   background: #000;
   transform-origin: right;
 }
-
+.scrollToTop {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  background: rebeccapurple;
+  border-radius: 100%;
+  inset: auto 1rem 1rem auto;
+}
 @media screen and (max-width: 1000px) {
   .list {
     flex-direction: column;

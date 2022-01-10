@@ -9,7 +9,13 @@ const Home = () => {
       <div className={`${styles.container} fluid-container`}>
         <div className={styles.innerContainer}>
           <div className={styles.leftContainer}>
-            <div>India's own live streaming app</div>
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              India's own live streaming app
+            </motion.div>
           </div>
           <div className={styles.rightContainer}>
             <motion.img

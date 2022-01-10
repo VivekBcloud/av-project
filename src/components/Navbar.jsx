@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/navbar.module.css";
-import { useInView } from "react-intersection-observer";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -102,6 +101,17 @@ const Navbar = () => {
           </motion.div>
         </div>
       </div>
+      {show && (
+        <div
+          className={styles.scrollToTop}
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            })
+          }
+        ></div>
+      )}
       <Outlet />
     </div>
   );

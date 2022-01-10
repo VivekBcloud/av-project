@@ -4,12 +4,13 @@ import { useInView } from "react-intersection-observer";
 import styles from "../styles/feature.module.css";
 import { cardData } from "../data/cardData";
 const Feature = () => {
-  const FeatureCard = ({ first, second }) => {
+  const FeatureCard = ({ card }) => {
     const animation = useAnimation();
     const [contentRef, inView] = useInView({
       triggerOnce: true,
       rootMargin: "-100px",
     });
+
     useEffect(() => {
       if (inView) {
         animation.start("visible");
@@ -21,7 +22,7 @@ const Feature = () => {
         y: 0,
         transition: {
           duration: 0.6,
-          ease: [0.6, 0.05, -0.01, 0.9],
+          // ease: "ease-in",
         },
       },
       hidden: {
@@ -35,16 +36,11 @@ const Feature = () => {
         animate={animation}
         initial="hidden"
         variants={cardAnimation}
-        className={styles.cardOuterContainer}
+        className={styles.cardContainer}
+        style={card.bg}
       >
-        <div className={styles.cardContainer} style={first.bg}>
-          <img src={first.cardImage} alt={first.cardTitle} />
-          <h3>{first.cardTitle}</h3>
-        </div>
-        <div className={styles.cardContainer} style={second.bg}>
-          <img src={second.cardImage} alt={second.cardTitle} />
-          <h3>{second.cardTitle}</h3>
-        </div>
+        <img src={card.cardImage} alt={card.cardTitle} />
+        <h3>{card.cardTitle}</h3>
       </motion.div>
     );
   };
@@ -52,11 +48,11 @@ const Feature = () => {
   return (
     <div className={`${styles.container} fluid-container`}>
       <div className={styles.heading}>Features</div>
-      {cardData.map((card, index) => {
-        return (
-          <FeatureCard key={index} first={card.first} second={card.second} />
-        );
-      })}
+      <div className={styles.cardOuterContainer}>
+        {cardData.map((card, index) => {
+          return <FeatureCard key={index} card={card} />;
+        })}
+      </div>
     </div>
   );
 };

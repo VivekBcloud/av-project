@@ -2,6 +2,9 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/footer.module.css";
 const Footer = () => {
+  const ScrollToTop = () => {
+    window.scroll(0, 0);
+  };
   return (
     <div className={styles.container}>
       <div className={`${styles.innerContainer} fluid-container`}>
@@ -10,6 +13,11 @@ const Footer = () => {
           <div>
             Milo Live app is an Indian app with the motive to bring every single
             talent on this platform.
+          </div>
+          <div className={styles.socialLogos}>
+            <img src="/svg/icons8-facebook.svg" alt="fb" />
+            <img src="/svg/icons8-instagram.svg" alt="insta" />
+            <img src="/svg/icons8-linkedin.svg" alt="linkedin" />
           </div>
         </div>
         <div className={styles.navi}>
@@ -71,10 +79,14 @@ const Footer = () => {
         <div className={styles.policy}>
           <h3 className={styles.footerTitles}>Policy</h3>
           <Link to="terms">
-            <div className={styles.anchor}>Terms & Conditions</div>
+            <div className={styles.anchor} onClick={ScrollToTop}>
+              Terms & Conditions
+            </div>
           </Link>
           <Link to="policy">
-            <div className={styles.anchor}>Privacy Policy</div>
+            <div className={styles.anchor} onClick={ScrollToTop}>
+              Privacy Policy
+            </div>
           </Link>
         </div>
       </div>
