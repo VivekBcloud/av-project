@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/footer.module.css";
 import { FacebookSvg, InstaSvg, LinkedinSvg } from "../data/useSvg";
 const Footer = () => {
-  const ScrollToTop = () => {
+  const scrollToTop = () => {
     window.scroll(0, 0);
   };
   return (
@@ -42,22 +42,22 @@ const Footer = () => {
         <div className={styles.navi}>
           <h3 className={styles.footerTitles}>Navigation</h3>
           <div>
-            <Link className={styles.anchor} to="/">
+            <Link className={styles.anchor} onClick={scrollToTop} to="/">
               Home
             </Link>
           </div>
           <div>
-            <Link className={styles.anchor} to="/about">
+            <Link className={styles.anchor} onClick={scrollToTop} to="/about">
               About
             </Link>
           </div>
           <div>
-            <Link className={styles.anchor} to="/agency">
+            <Link className={styles.anchor} onClick={scrollToTop} to="/agency">
               Agency Request
             </Link>
           </div>
           <div>
-            <Link className={styles.anchor} to="/contact">
+            <Link className={styles.anchor} onClick={scrollToTop} to="/contact">
               Contact Us
             </Link>
           </div>
@@ -98,12 +98,12 @@ const Footer = () => {
         <div className={styles.policy}>
           <h3 className={styles.footerTitles}>Policy</h3>
           <Link to="terms">
-            <div className={styles.anchor} onClick={ScrollToTop}>
+            <div className={styles.anchor} onClick={scrollToTop}>
               Terms & Conditions
             </div>
           </Link>
           <Link to="policy">
-            <div className={styles.anchor} onClick={ScrollToTop}>
+            <div className={styles.anchor} onClick={scrollToTop}>
               Privacy Policy
             </div>
           </Link>

@@ -1,18 +1,29 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styles from "../styles/about.module.css";
-
+import AnimateHztlComp from "../components/AnimateHztlComp";
 const About = () => {
   return (
-    <div className={`${styles.container}  fluid-container`}>
+    <div className={`${styles.container}  `}>
       <div className={styles.headerSection}>
-        <h1>About us</h1>
+        <motion.h1
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          About us
+        </motion.h1>
+
         <img src="/svg/wave.svg" alt="wave" className={styles.waveImg} />
       </div>
       <div className={`${styles.innerContainer}`}>
-        <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
+        <div
+          className={`${styles.aboutSection} ${styles.aboutSection46}`}
+          style={{ paddingTop: "0" }}
+        >
           <div className={styles.leftSection}>
-            <div className={styles.title}>ABOUT US</div>
-            <div className={styles.desc}>
+            <div className={`${styles.title} fluid-container`}>ABOUT US</div>
+            <div className={`${styles.desc} fluid-container`}>
               Milo Live Entertainment is India's own LIVE Streaming platform.
               Milo Live app is an Indian app with the motive to bring every
               single talent on this platform. It allows you to make friends &
@@ -20,38 +31,50 @@ const About = () => {
             </div>
           </div>
           <div className={`${styles.rightSection} fluid-container`}>
-            <img src="/svg/undraw_svg_2.svg" alt="about-img" />
+            <AnimateHztlComp leftDir={false}>
+              <img src="/svg/undraw_svg_2.svg" alt="about-img" />
+            </AnimateHztlComp>
           </div>
         </div>
         <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
           <div className={`${styles.leftSection} fluid-container`}>
-            <img src="/svg/undraw_svg_3.svg" alt="live-img" />
+            <AnimateHztlComp leftDir={true}>
+              <img src="/svg/undraw_svg_3.svg" alt="live-img" />
+            </AnimateHztlComp>
           </div>
           <div className={styles.rightSection}>
-            <div className={styles.title}>
+            <div className={`${styles.title} fluid-container`}>
               Milo Live provides all-in-one platform for:
             </div>
-            <div className={styles.desc}>
+            <div className={`${styles.desc} fluid-container`}>
               Live Video Streaming Live Messaging Live Gaming (Players Knockout)
               Huge Earnings
             </div>
           </div>
         </div>
-        <div className={styles.aboutSection}>
-          <div className={styles.leftSection}>
-            <div className={styles.title}>Mission</div>
-            <div className={styles.desc}>
-              To provide a seamless platform for general public to showcase
-              their talent.
+        <div className={`${styles.linearGrad}`}>
+          <div className={`${styles.aboutSection} fluid-container`}>
+            <div className={styles.leftSection}>
+              <div className={styles.title} style={{ color: "white" }}>
+                Mission
+              </div>
+              <div className={styles.desc} style={{ color: "white" }}>
+                To provide a seamless platform for general public to showcase
+                their talent.
+              </div>
             </div>
-          </div>
-          <div className={`${styles.rightSection} fluid-container`}>
-            <img src="/images/mission.jpg" alt="mission-img" />
+            <div className={`${styles.rightSection} fluid-container`}>
+              <AnimateHztlComp leftDir={false}>
+                <img src="/images/mission.jpg" alt="mission-img" />
+              </AnimateHztlComp>
+            </div>
           </div>
         </div>
         <div className={`${styles.aboutSection} ${styles.aboutSection46}`}>
           <div className={`${styles.leftSection} fluid-container`}>
-            <img src="/svg/undraw_svg_4.svg" alt="why-img" />
+            <AnimateHztlComp leftDir={true}>
+              <img src="/svg/undraw_svg_4.svg" alt="why-img" />
+            </AnimateHztlComp>
           </div>
           <div className={`${styles.rightSection} fluid-container`}>
             <div className={styles.title}>Why Us</div>

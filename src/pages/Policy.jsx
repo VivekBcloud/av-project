@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import aboutstyles from "../styles/about.module.css";
 import styles from "../styles/terms.module.css";
@@ -5,7 +6,13 @@ const Condition = () => {
   return (
     <div className={`${aboutstyles.container}  fluid-container`}>
       <div className={aboutstyles.headerSection}>
-        <h1>Privacy Policy</h1>
+        <motion.h1
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          Privacy Policy
+        </motion.h1>
         <img src="/svg/wave.svg" alt="wave" className={aboutstyles.waveImg} />
       </div>
       <div className={styles.innerContainer}>

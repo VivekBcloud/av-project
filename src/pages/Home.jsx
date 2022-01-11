@@ -10,7 +10,7 @@ const Home = () => {
         <div className={styles.innerContainer}>
           <div className={styles.leftContainer}>
             <motion.div
-              initial={{ x: -100, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}
             >
@@ -19,7 +19,7 @@ const Home = () => {
           </div>
           <div className={styles.rightContainer}>
             <motion.img
-              initial={{ x: -100, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}
               src="/images/banner1.jpeg"
@@ -27,9 +27,9 @@ const Home = () => {
               className={styles.banner1}
             />
             <motion.img
-              initial={{ x: -100, opacity: 0 }}
+              initial={{ x: -200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: "1" }}
+              transition={{ duration: 1, delay: "0.2" }}
               src="/images/banner2.jpeg"
               alt="banner2"
               className={styles.banner2}

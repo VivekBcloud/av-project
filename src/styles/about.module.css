@@ -39,18 +39,23 @@
 .container .innerContainer {
   display: grid;
   place-items: center;
-  max-width: 84rem;
+  width: 100%;
+  /* max-width: 84rem; */
+  /* margin: 0 auto; */
   gap: 2rem;
   z-index: 2;
 }
 .container .innerContainer .aboutSection {
+  margin: 0 auto;
   width: 100%;
+  max-width: 84rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* justify-content: center; */
   align-items: center;
   gap: 8rem;
   text-align: left;
+  padding: 5vw 0;
 }
 .container .innerContainer .aboutSection46 {
   grid-template-columns: 4fr 6fr;
@@ -75,6 +80,13 @@
   max-width: 100%;
   /* max-width: 50ch; */
   height: auto;
+}
+.container .innerContainer .linearGrad {
+  /* height: auto; */
+  width: 100%;
+  padding: 5vw 0;
+  color: white;
+  background: linear-gradient(to right, #5c10f2c9 0%, #14b2fd 100%);
 }
 
 @media screen and (max-width: 1000px) {
