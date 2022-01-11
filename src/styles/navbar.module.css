@@ -85,7 +85,7 @@ li {
   position: fixed;
   height: 40px;
   width: 40px;
-  background: #f8f9fa;
+  background: #fff;
   border-radius: 100%;
   inset: auto 1rem 1rem auto;
   display: grid;
