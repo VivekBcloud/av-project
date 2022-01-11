@@ -167,13 +167,7 @@ const Terms = () => {
           <h4>15. Third Parties.</h4>
           {`
           15.1 The Software may be incorporated into, and may incorporate itself with software and other technology owned and controlled by third parties. Any such third party software or technology that is incorporated in the Software falls under the scope of these Terms. 17. Availability and New Versions of the Services.
-          17.1 MILO LIVE may, without prior notice, stop providing the Services, features of the Services, and/or any of the Services, to you or to users generally, or create usage limits for the Services.
-          17.2 MILO LIVE , in its sole discretion, reserves the right to add additional features or functions, or to modify or provide programming fixes, updates and upgrades, to the Services without notice.
-          17.3 MILO LIVE has no obligation to make available to you any additional features or functions or any modifications, updates, support, maintenance or subsequent versions of the Services.
-          17.4 You may have to agree to a renewed version of some or all of the Terms in the event you want to download, install or use any additional features or functions or any modifications, updates or new versions of the Services.
-          17.5 You acknowledge that MILO LIVE may automatically issue any additional features or functions or modifications, updates or upgraded versions of the Services and, accordingly, may modify, update or upgrade the version of the Services that you are using or have installed on your Device.
-          17.6 You hereby agree that your Device may automatically request and/or receive such modifications, upgrades or updates.
-          `}
+         `}
           <h4>16. Third-Party Sites, Products and Services; Links.</h4>
           {`
             16.1 The Services may include links or references to third-party web sites or applications offering products or services, including games, applications, third party shopping merchants, images, special offers, or other events or activities, that are operated and maintained by other persons and/or that are not owned by MILO LIVE (“Reference Sites“). The Terms do not apply to Reference Sites. Please be aware when you visit or use any Reference Sites, and we encourage you to read the terms and conditions and privacy policies of any Reference Sites that you visit or use.
@@ -182,6 +176,15 @@ const Terms = () => {
 16.2.4 The completeness, truth or accuracy of any advertising or other materials on, or available from, Reference Sites, nor any listing or other content about such products or services displayed on Reference Sites;
 16.2.5 Any questions, complaints, or claims related to any product or service provided by a Reference Site should be directed to the applicable third party responsible for the Reference Site.
             `}
+          <h4>17. Services</h4>
+          {`
+             17.1 MILO LIVE may, without prior notice, stop providing the Services, features of the Services, and/or any of the Services, to you or to users generally, or create usage limits for the Services.
+             17.2 MILO LIVE , in its sole discretion, reserves the right to add additional features or functions, or to modify or provide programming fixes, updates and upgrades, to the Services without notice.
+             17.3 MILO LIVE has no obligation to make available to you any additional features or functions or any modifications, updates, support, maintenance or subsequent versions of the Services.
+             17.4 You may have to agree to a renewed version of some or all of the Terms in the event you want to download, install or use any additional features or functions or any modifications, updates or new versions of the Services.
+             17.5 You acknowledge that MILO LIVE may automatically issue any additional features or functions or modifications, updates or upgraded versions of the Services and, accordingly, may modify, update or upgrade the version of the Services that you are using or have installed on your Device.
+             17.6 You hereby agree that your Device may automatically request and/or receive such modifications, upgrades or updates.
+             `}
           <h4>18. Withdrawals.</h4>
           {`18.1 Users can raise immediate cash out withdrawal requests via the Redeem section of the services provided:
 18.1.1 The immediate withdrawal facility is available in their respective region; 18.1.2 They have a minimum withdrawable balance greater than fifty four hundred (5400) INR; and
