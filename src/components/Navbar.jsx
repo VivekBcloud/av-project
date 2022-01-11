@@ -9,6 +9,9 @@ const Navbar = () => {
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
   };
+  const scrollToTop = () => {
+    window.scroll(0, 0);
+  };
   const navbarControl = () => {
     if (window.scrollY > 100) {
       setShow(true);
@@ -66,22 +69,50 @@ const Navbar = () => {
           {(toggleMenu || screenWidth > 1000) && (
             <ul className={styles.list}>
               <li className={styles.items}>
-                <Link className={styles.anchor} to="/">
+                <Link
+                  className={styles.anchor}
+                  onClick={() => {
+                    setToggleMenu(false);
+                    scrollToTop();
+                  }}
+                  to="/"
+                >
                   Home
                 </Link>
               </li>
               <li className={styles.items}>
-                <Link className={styles.anchor} to="about">
+                <Link
+                  className={styles.anchor}
+                  onClick={() => {
+                    setToggleMenu(false);
+                    scrollToTop();
+                  }}
+                  to="about"
+                >
                   About Us
                 </Link>
               </li>
               <li className={styles.items}>
-                <Link className={styles.anchor} to="agency">
+                <Link
+                  className={styles.anchor}
+                  onClick={() => {
+                    setToggleMenu(false);
+                    scrollToTop();
+                  }}
+                  to="agency"
+                >
                   Agency Request
                 </Link>
               </li>
               <li className={styles.items}>
-                <Link className={styles.anchor} to="contact">
+                <Link
+                  className={styles.anchor}
+                  onClick={() => {
+                    setToggleMenu(false);
+                    scrollToTop();
+                  }}
+                  to="contact"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -110,7 +141,9 @@ const Navbar = () => {
               behavior: "smooth",
             })
           }
-        ></div>
+        >
+          <img src="/images/up-arrow.png" alt="up" />
+        </div>
       )}
       <Outlet />
     </div>

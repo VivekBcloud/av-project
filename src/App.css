@@ -11,7 +11,15 @@
 a {
   text-decoration: none;
   /* color: #afafaf; */
+  transition: all 200ms ease;
+}
+svg {
+  transition: all 200ms ease;
 }
 a:hover {
   color: white;
+}
+button:hover {
+  opacity: 0.8;
+  transition: all 200ms ease;
 }

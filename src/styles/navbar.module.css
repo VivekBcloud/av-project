@@ -21,7 +21,7 @@
 }
 .containerOnScroll {
   padding: 0 1em;
-  background: white;
+  background-color: #f8f9fa;
   transition: all ease 500ms;
 }
 .logo {
@@ -39,8 +39,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  /* background: red; */
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 .items {
   margin-right: 20px;
@@ -83,19 +82,32 @@
   position: fixed;
   height: 40px;
   width: 40px;
-  background: rebeccapurple;
+  background: #f8f9fa;
   border-radius: 100%;
   inset: auto 1rem 1rem auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid #0d6efd;
+  cursor: pointer;
+}
+
+.scrollToTop > img {
+  width: 70%;
+}
+.scrollToTop:hover {
+  opacity: 0.8;
 }
 @media screen and (max-width: 1000px) {
   .list {
+    position: absolute;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     padding: 1rem;
+    border-radius: 1rem;
     top: 0;
     left: 0;
     right: 0;
-    position: absolute;
+    backdrop-filter: blur(10px);
   }
   .items:nth-child(1) {
     border-top: 1px solid rgba(255, 255, 255, 0.555);
