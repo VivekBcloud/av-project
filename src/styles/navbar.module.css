@@ -101,21 +101,19 @@
   .list {
     position: absolute;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     padding: 1rem;
     border-radius: 1rem;
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     backdrop-filter: blur(10px);
   }
   .items:nth-child(1) {
-    border-top: 1px solid rgba(255, 255, 255, 0.555);
-    margin-top: 50px;
+    border-top: 1px solid rgba(131, 131, 131, 0.555);
+    /* margin-top: 1rem; */
   }
   .items {
     width: 100%;
-    border-top: 1px solid rgba(255, 255, 255, 0.555);
+    border-top: 1px solid rgba(131, 131, 131, 0.555);
     text-align: center;
     margin-right: 0px;
     padding: 20px 0;
