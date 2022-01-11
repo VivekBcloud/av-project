@@ -1,11 +1,12 @@
 .container {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   max-width: 84rem;
   width: 100%;
   position: relative;
   z-index: 11;
   /* display: grid; */
   place-content: center;
+  margin-bottom: 4rem;
   margin: auto;
 }
 .container .heading {
@@ -20,10 +21,9 @@
   width: auto;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  padding: 30px;
+  padding: 30px 0;
 }
 .container .cardOuterContainer .cardContainer {
-  min-width: 50%;
   padding: 20px;
   background-image: linear-gradient(#cac50a, #fd460df7);
   border-radius: 25px;
@@ -35,13 +35,21 @@
   margin: 1rem 0;
 }
 .container .cardOuterContainer .cardContainer > img {
-  height: 400px;
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
 }
 
 @media screen and (max-width: 1000px) {
+  .container {
+    width: auto;
+  }
   .container .cardOuterContainer {
     grid-template-columns: 1fr;
     width: 70%;
     margin: auto;
+  }
+  .container .cardOuterContainer {
+    width: 100%;
   }
 }

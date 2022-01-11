@@ -45,7 +45,8 @@
   position: relative;
 }
 .rightContainer > img {
-  width: 250px;
+  max-width: 250px;
+  height: auto;
 }
 .rightContainer .banner1 {
   border: 10px solid white;
@@ -65,7 +66,11 @@
   .container .innerContainer {
     grid-template-columns: 1fr;
   }
+  .waveImg {
+    top: 95%;
+  }
   .leftContainer {
+    font-size: 3rem;
     text-align: center;
   }
   .leftContainer > div {
@@ -73,5 +78,13 @@
   }
   .rightContainer .banner2 {
     top: 0;
+  }
+  .rightContainer .banner1 {
+    position: relative;
+    left: -10%;
+  }
+
+  .rightContainer .banner2 {
+    left: 20%;
   }
 }

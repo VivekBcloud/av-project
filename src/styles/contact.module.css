@@ -1,6 +1,6 @@
 .innerContainer {
   max-width: 84rem;
-  width: 100%;
+  /* width: 100%; */
   z-index: 2;
 }
 .innerContainer .agencyTitle {

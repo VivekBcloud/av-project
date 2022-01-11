@@ -63,60 +63,54 @@ const Navbar = () => {
     >
       <div className={`${styles.innerContainer} `}>
         <div className={styles.logo}>
-          <img src="/images/logoML.png" alt="logo" />
+          <Link to="/">
+            <img src="/images/logoML.png" alt="logo" />
+          </Link>
         </div>
         <div className={styles.navItems}>
           {(toggleMenu || screenWidth > 1000) && (
-            <ul className={styles.list}>
-              <li className={styles.items}>
-                <Link
-                  className={styles.anchor}
-                  onClick={() => {
-                    setToggleMenu(false);
-                    scrollToTop();
-                  }}
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className={styles.items}>
-                <Link
-                  className={styles.anchor}
-                  onClick={() => {
-                    setToggleMenu(false);
-                    scrollToTop();
-                  }}
-                  to="about"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li className={styles.items}>
-                <Link
-                  className={styles.anchor}
-                  onClick={() => {
-                    setToggleMenu(false);
-                    scrollToTop();
-                  }}
-                  to="agency"
-                >
-                  Agency Request
-                </Link>
-              </li>
-              <li className={styles.items}>
-                <Link
-                  className={styles.anchor}
-                  onClick={() => {
-                    setToggleMenu(false);
-                    scrollToTop();
-                  }}
-                  to="contact"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+            <div className={styles.list}>
+              <Link
+                className={styles.anchor}
+                onClick={() => {
+                  setToggleMenu(false);
+                  scrollToTop();
+                }}
+                to="/"
+              >
+                <div className={styles.items}>Home</div>
+              </Link>
+              <Link
+                className={styles.anchor}
+                onClick={() => {
+                  setToggleMenu(false);
+                  scrollToTop();
+                }}
+                to="about"
+              >
+                <div className={styles.items}>About Us</div>
+              </Link>
+              <Link
+                className={styles.anchor}
+                onClick={() => {
+                  setToggleMenu(false);
+                  scrollToTop();
+                }}
+                to="agency"
+              >
+                <div className={styles.items}>Agency Request</div>
+              </Link>
+              <Link
+                className={styles.anchor}
+                onClick={() => {
+                  setToggleMenu(false);
+                  scrollToTop();
+                }}
+                to="contact"
+              >
+                <div className={styles.items}>Contact Us</div>
+              </Link>
+            </div>
           )}
 
           <motion.div
